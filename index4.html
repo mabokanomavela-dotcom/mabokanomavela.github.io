@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>webside</title>
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+	<header>
+		<h1> WELCOME TO LESOTHO TOURISIM</h1>
+		<nav>
+			<a href="index4.html">Home</a>
+			<a href="index3.html">About</a>
+			<a href="index1.html">Services</a>
+			<a href="index2.html">Gallery</a>
+			<a href="index.html">Contacts</a>
+      <button onclick="darkMode()">Dark Mode</button>
+
+      <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="search()">Search</button>
+
+		</nav>
+
+	</header>
+
+</head>
+<body>
+   <p id="result"></p>
+  <body id="page">
+<main>
+    <section class="hero">
+     <div class="container text-center">
+        <h1>Discover the Beauty of Lesotho</h1>
+        <p>Welcome to the Mountain Kingdom.Explore beautiful landscapes, culture and tourism attractions.</p>
+     </div>
+    </section>
+
+<section class="container py-5">
+  <div class="row">
+   <div class="col-md-6">
+     <h2>Welcome to Lesotho</h2>
+      <p> Lesotho is a beautiful mountain kingdom known for its spectacular landscapes, mountains and cultural experiences.</p>
+     <p>Explore our website to discover tourist destinations,activities, accommodation and more.</p>
+ </div>
+ <aside class="col-md-6">
+   <div class="info-box">
+     <h3>Why Visit Lesotho?</h3>
+     <ul>
+        <li>Beautiful mountain scenery</li>
+        <li>Unique cultural experiences</li>
+        <li>Outdoor activities</li>
+        <li>Tourist attractions</li>
+        <li>Adventure opportunities</li>
+     </ul>
+   </div>
+  </aside>
+ </div>
+</section>
+<section class="container py-5">
+ <h2 class="text-center mb-4">Featured Destinations</h2>
+ <div class="row g-4">
+    <article class="col-md-4">
+     <div class="card h-100">
+        <div class="card-body">
+            <img src="QQ.webp" width="320px" height="200px">
+            <h3 class="card-title">Maletsunyane</h3>  
+            <p class="card-text">Discover the natural beauty and mountain scenery around Maletsunyane.</p>
+        </div>
+       </div>
+   </article>
+ <article class="col-md-4">
+  <div class="card h-100">
+    <div class="card-body">
+        <img src="PP.webp" width="320px" height="200px">
+       <h3 class="card-title">Katse Dam</h3>
+        <p class="card-text">Explore the scenery and attractions around Katse Dam.</p>    
+     </div>
+   </div>
+ </article>
+ <article class="col-md-4">
+   <div class="card h-100">
+     <div class="card-body">
+       <h3 class="card-title">Mountain Adventures</h3>
+         <p class="card-text">Experience outdoor activities and adventures in the mountains.</p>
+        </div>
+      </div>
+    </article>
+   </div>
+ </section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Frequently Asked Questions </h2>  
+   <div class="accordion" id="faqAccordion">
+     <div class="accordion-item">
+       <h3 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">What can I do in Lesotho?</button>
+        </h3>
+        <div id="faqOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+            isitors can explore destinations, activities culture and beautiful mountain scenery.
+        </div>
+      </div>
+      </div>
+    <div class="accordion-item">
+       <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#faqTwo">How can I contact you?</button>
+       </h3>
+  <div id="faqTwo" class="accordion-collapse collapse">
+     <div class="accordion-body"> 
+        Visit the Contact page to send an enquiry.
+    </div>
+   </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+ <script>
+ function darkMode() {
+            document.getElementById("page").style.backgroundColor = "black";
+            document.getElementById("page").style.color = "white";
+        }
+         function search() {
+      let text = document.getElementById("searchInput").value;
+
+      document.getElementById("result").innerText =
+        "You searched for: " + text;
+    }
+    </script>
+
+</body>
+<footer>copyright@noma2012maboka</footer>
+</html>
